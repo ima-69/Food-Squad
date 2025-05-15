@@ -17,7 +17,7 @@ public class Food {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     private String name;
 
@@ -45,5 +45,5 @@ public class Food {
     private List<IngredientsItem> ingredients = new ArrayList<>();
 
     private Date creationDate;
-    
+
 }

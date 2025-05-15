@@ -17,7 +17,7 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     @ManyToOne
     private User customer;
@@ -38,7 +38,7 @@ public class Order {
     @OneToMany
     private List<OrderItem> items;
 
-    private Payment payment;
+    //private Payment payment;
 
     private int totalItem;
 
